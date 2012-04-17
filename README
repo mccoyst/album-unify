@@ -1,0 +1,25 @@
+Here's an example, using the following folders:
+
+	Some Album [Disc 1]/
+		01 Song A.mp3
+		02 Song B.mp3
+		…
+
+	Some Album [Disc 2]/
+		01 Song P.mp3
+		02 Song Q.mp3
+		…
+
+This command
+
+	album-unify 'Some Album [Disc 1]' 'Some Album [Disc 2]'
+
+will create this folder and delete the other two:
+
+	Some Album/
+		1-01 Song A.mp3
+		1-02 Song B.mp3
+		…
+		2-01 Song P.mp3
+		2-02 Song Q.mp3
+		…
