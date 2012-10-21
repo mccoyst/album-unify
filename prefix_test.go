@@ -6,15 +6,15 @@ package main
 import "testing"
 
 type test struct {
-	args []string
+	args   []string
 	expect string
 }
 
 func TestPrefix(t *testing.T) {
 	tests := []test{
-		{ []string{ "a", "b" }, "" },
-		{ []string{ "aa", "ab", "ac" }, "a" },
-		{ []string{ "Tommy [Disc 1]", "Tommy [Disc 2]" }, "Tommy" },
+		{[]string{"a", "b"}, ""},
+		{[]string{"aa", "ab", "ac"}, "a"},
+		{[]string{"Tommy [Disc 1]", "Tommy [Disc 2]"}, "Tommy"},
 	}
 
 	for _, test := range tests {
